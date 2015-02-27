@@ -193,38 +193,43 @@ p.copyright {
 
 /* Carousel base class */
 .carousel {
-  height: 400px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
+    height: 400px;
+    margin-bottom: 60px;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 400px;
-  background-color: #777;
+    height: 400px;
+    background-color: #777;
 }
 
 .carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 400px;
 }
 
 .in-carousel {
-  vertical-align: middle;
-  text-align: center;
-  position: relative
+    vertical-align: middle;
+    text-align: center;
+    position: relative
+}
+
+.in-carousel-text {
+    color: #eee;
+}
+
+.in-carousel-text p {
+    font-size: 16px;
 }
 
 .in-carousel > img {
-  position: absolute;
-  min-width: 100%;
-  height:400px;
+    position: absolute;
+    min-width: 100%;
+    height:400px;
+    z-index: -1;
 }
 
 /* Categories */
