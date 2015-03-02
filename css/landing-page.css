@@ -25,7 +25,7 @@ body {
 }
 
 .topnav {
-    font-size: 14px; 
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .lead {
@@ -34,20 +34,25 @@ body {
 }
 
 .quote {
+    margin: 20px 0;
+    padding: 10px 0;
     font-size: 20px;
     font-style: italic;
+    border: 2px solid #e7e7e7;
+    /*background-color: #eeeeee;*/
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    margin-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     text-align: center;
     color: #f8f8f8;
-    background-size: cover;
+    min-height: calc(100vh - 50px);
+    position: relative;
 }
 
 .intro-message {
     position: relative;
+    transform: translate(0,50%);
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -100,20 +105,24 @@ body {
 }
 
 .content-section-a {
-    padding: 20px 0;
+    padding: 50px 0;
     background-color: #f8f8f8;
+    min-height: 100vh;
+    /*background-color: #ffeecc;*/
+    background-color: #ffffff;
 }
 
 .content-section-b {
-    padding: 20px 0;
+    padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    min-height: 100vh;
+    /*background-color: #eeffcc;*/
+    background-color: #f2f7d9;
 }
 
-.content-section-q {
-    padding: 10px 0;
-    border-top: 1px solid #e7e7e7;
-    background-color: #eeeeee;
+.content-section-last {
+    min-height: 0;
 }
 
 .section-heading {

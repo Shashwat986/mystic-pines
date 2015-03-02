@@ -20,6 +20,7 @@
     .intro-header
     {
         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg.jpg) no-repeat center center;
+        background-size: contain;
     }
     </style>
     
@@ -40,7 +41,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -77,7 +78,7 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    
     <!-- Intro Section -->
     <section id="intro" class="intro-header">
         <div class="container">
@@ -95,25 +96,30 @@
     <section id="about" class="content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <h2 class="section-heading">About Us</h2>
                     <p class="lead"><strong>Mystic Pines</strong> specializes in producing all kinds of outdoor wooden houses, such as villas, holiday bungalows, chalets, tool houses, tourist cabins and so on.
                     <br>
                     We have a professional design team, skillful production technical personnel, complete and scientific quality management system, and have established our reputation based on good faith, strength and quality.</p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
                     <img class="img-responsive" src="images/pic01.jpg" alt="">
                 </div>
             </div>
-        </div><!-- /.container -->
-    </section>
-    
-    <section class="content-section-q">
-        <div class="container">
             <div class="row">
                 <center class="quote">
                     "The wood we use are <strong>SPF</strong> Imported from Canada and <strong>SiberianPine</strong> from Russia."
                 </center>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <img class="img-responsive" src="images/pic01.jpg" alt="">
+                </div>
+                <div class="col-lg-6 col-lg-offset-1 col-sm-6">
+                    <p class="lead">There are a huge range of advantages when it comes to construction a wooden frame house in comparison to a traditional build.
+                    <br><br>
+                    They can be built in a manner that makes them energy saving, which offers an investment opportunity for anyone that has one. They are well known for being incredibly durable. Of course, the natural beauty that a timber frame home offers is something that many consumers simply can not put a price on. We offer people the chance to own a home with character, rather than a house that looks identical to the last one they lived in.</p>
+                </div>
             </div>
         </div><!-- /.container -->
     </section>
@@ -140,10 +146,12 @@
     <section id="advantages" class="content-section-b">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-                    <h2 class="section-heading right">Advantages</h2>
+                <div class="col-sm-12">
+                    <h2 class="section-heading">Advantages</h2>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid">
             <div class="row">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   <!-- Indicators 
@@ -220,8 +228,10 @@
                   </a>
                 </div><!-- /.carousel -->
             </div><!-- ./row -->
+        </div>
+        <div class="container">
             <div class="row">
-                <a href="#"><h5>See more...</h5></a>
+                <a class="btn btn-info right" href="advantages.html">See more...</a>
             </div>
         </div><!-- /.container -->
     </section>
@@ -266,7 +276,7 @@
     </section>
 
     <!-- Contact Section -->
-    <div id="contact" class="content-section-b">
+    <div id="contact" class="content-section-b content-section-last">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
