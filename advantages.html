@@ -36,7 +36,7 @@
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".outer-left-bar">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container">
@@ -74,8 +74,8 @@
     </nav>
 
     <div class="container-fluid first">
-        <div class="hidden-xs">
-            <ul class="nav nav-pills nav-stacked fixed left-bar">
+        <nav class="hidden-xs outer-left-bar fixed" role="navigation">
+            <ul class="nav nav-pills nav-stacked left-bar">
                 <li class="hidden">
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
@@ -107,7 +107,7 @@
                     <a class="page-scroll" href="#adv9">Design Options</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
     <div class="container-fluid">
         <section id="adv1" class="content-section-adv">
