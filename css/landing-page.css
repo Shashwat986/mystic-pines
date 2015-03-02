@@ -33,13 +33,23 @@ body {
     font-weight: 400;
 }
 
+.fixed {
+    position:fixed;
+}
+
 .quote {
     margin: 20px 0;
     padding: 10px 0;
     font-size: 20px;
     font-style: italic;
-    border: 2px solid #e7e7e7;
+    border: 5px inset #f4a460;
+    border-radius: 15px;
+    background: #e4dbbc;
     /*background-color: #eeeeee;*/
+}
+
+.first {
+    margin-top: 50px;
 }
 
 .intro-header {
@@ -104,12 +114,36 @@ body {
     letter-spacing: 2px;
 }
 
+.content-section-adv {
+    padding: 50px 10px;
+    min-height: 100vh;
+    display: table;
+    background: #ded2ac;
+    border-bottom: 2px solid #b1a889;
+}
+
+.content-section-adv > div,
+.content-section-adv > div > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*
+.content-section-adv:nth-child(even) {
+    background-color: #e4dbbc;
+}
+
+.content-section-adv:nth-child(odd) {
+    background-color: #ded2ac;
+}
+*/
+
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    /*background-color: #f8f8f8;*/
     min-height: 100vh;
     /*background-color: #ffeecc;*/
-    background-color: #ffffff;
+    background-color: #e4dbbc;
 }
 
 .content-section-b {
@@ -118,7 +152,8 @@ body {
     border-bottom: 1px solid #e7e7e7;
     min-height: 100vh;
     /*background-color: #eeffcc;*/
-    background-color: #f2f7d9;
+    /*background-color: #f2f7d9;*/
+    background-color: #ded2ac;
 }
 
 .content-section-last {
@@ -251,4 +286,17 @@ p.copyright {
     font-size: 16px;
 }
 
+/* Advantages */
 
+.left-bar {
+    margin: 5px;
+    padding: 20px 10px;
+    border: 5px inset #f4a460;
+    border-radius: 15px;
+    background: #e4dbbc;
+}
+
+.stain {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
