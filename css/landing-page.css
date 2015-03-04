@@ -52,7 +52,11 @@ body {
     padding: 10px 0;
     font-size: 20px;
     font-style: italic;
-    border: 5px inset #f4a460;
+    border: 5px solid #a06b3f;
+    border-top-color: #a06b3f;
+    border-left-color: #a06b3f;
+    border-right-color: #f4a460;
+    border-bottom-color: #f4a460;
     border-radius: 15px;
     background: #e4dbbc;
     /*background-color: #eeeeee;*/
@@ -136,6 +140,12 @@ body {
 .content-section-adv > div > div {
     display: table-cell;
     vertical-align: middle;
+}
+
+.content-section-cat {
+    padding: 50px 10px;
+    min-height: 100vh;
+    border-bottom: 2px solid #b1a889;
 }
 
 /*
@@ -257,7 +267,7 @@ p.copyright {
     background-color: #777;
 }
 
-.carousel-inner > .item > img {
+.carousel-inner > .item img {
     position: absolute;
     top: 0;
     left: 0;
@@ -266,7 +276,7 @@ p.copyright {
     top: -200px;
     opacity: 0.6;
 }
-.carousel-inner > .item > img:hover {
+.carousel-inner > .item img:hover {
     opacity: 1.0;
 }
 
@@ -312,7 +322,11 @@ p.copyright {
     vertical-align: middle;
     margin: 5px;
     padding: 20px 10px;
-    border: 5px inset #f4a460;
+    border: 5px solid #a06b3f;
+    border-top-color: #a06b3f;
+    border-left-color: #a06b3f;
+    border-right-color: #f4a460;
+    border-bottom-color: #f4a460;
     border-radius: 15px;
     background: #e4dbbc;
 }
@@ -322,11 +336,52 @@ p.copyright {
     color: #337ab7 !important;
 }
 
+/*
+.left-bar a:after {
+    content:"";
+}
+
+.left-bar a:before {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    content: "";
+}
+
+.left-bar .active a:after {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    content:" \e250";
+}
+
+.left-bar .active a:before {
+    content:"";
+}
+*/
+
 .stain {
     width: 100%;
     height: 100px;
     padding: 10px;
 }
 
-.content-section-cat {
+.caption {
+    overflow: hidden;
+}
+
+.cat-img {
+    width: 100%;
+    height: 150px;  /* Need to customize */
+    margin: 10px 0;
+}
+
+.is-link:hover {
+    cursor: pointer;
+}
+
+.modal-content {
+    /*background-color: #ded2ac;*/
 }
