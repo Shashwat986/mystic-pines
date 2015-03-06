@@ -20,8 +20,31 @@
     <style type="text/css">
     .intro-header
     {
-        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg.jpg) no-repeat center center;
+        background-color: #000;
+        z-index: -1;
+    }
+    .intro-header-bg
+    {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg0.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
         background-size: contain;
+        position:fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    .bg0
+    {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg0.jpg);
+    }
+    .bg1
+    {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg1.jpg);
+    }
+    .bg2
+    {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg2.jpg);
     }
     body {
         background-color: #ded2ac;
@@ -70,8 +93,16 @@
                     <li>
                         <a class="page-scroll" href="advantages.html">Advantages</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="categories.html">Categories</a>
+                    <li class="dropdown">
+                        <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#">Categories <span class="caret caret-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="categories.html#cat1">Holiday Homes</a></li>
+                            <li><a href="categories.html#cat2">Villas</a></li>
+                            <li><a href="categories.html#cat3">Classic Rooms</a></li>
+                            <li><a href="categories.html#cat4">Children Cabins</a></li>
+                            <li><a href="categories.html#cat5">Guard Rooms</a></li>
+                            <li><a href="categories.html#cat6">Gazebos</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -85,6 +116,7 @@
     
     <!-- Intro Section -->
     <section id="intro" class="intro-header">
+        <div class="intro-header-bg"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -150,35 +182,35 @@
                     <div class="item active in-carousel">
                         <div class="row">
                             <div class="carousel-caption">
-                                <a href="advantages.html">
+                                <a href="advantages.html#adv1">
                                 <h2>Environmental Friendly</h2>
                                 <p>The construction of Wooden Homes is pollution free and leaves behind no solid or liquid waste associated with brick and mortar construction.</p>
                                 </a>
                             </div>
                         </div>
-                        <a href="advantages.html"><img src="images/carousel1.jpg" alt="First slide"></a>
+                        <a href="advantages.html#adv1"><img src="images/carousel1.jpg" alt="First slide"></a>
                     </div>
                     <div class="item in-carousel">
                         <div class="row">
                             <div class="carousel-caption">
-                                <a href="advantages.html">
+                                <a href="advantages.html#adv3">
                                 <h2>Short On-Site Construction Time</h2>
                                 <p>All manufacturing processes are undertaken at our production facilities. Only assembling and installation is undertaken on site.</p>
                                 </a>
                             </div>
                         </div>
-                        <a href="advantages.html"><img src="images/carousel2.jpg" alt="First slide"></a>
+                        <a href="advantages.html#adv3"><img src="images/carousel2.jpg" alt="First slide"></a>
                     </div>
                     <div class="item in-carousel">
                         <div class="row">
                             <div class="carousel-caption">
-                                <a href="advantages.html">
+                                <a href="advantages.html#adv5">
                                 <h2>Safe and Sturdy</h2>
                                 <p>Our cottages are earthquake resistant. All wood are seasoned and treated for termite resistance. We offer 30 years warranty on treated wood.</p>
                                 </a>
                             </div>
                         </div>
-                        <a href="advantages.html"><img src="images/carousel3.jpg" alt="First slide"></a>
+                        <a href="advantages.html#adv5"><img src="images/carousel3.jpg" alt="First slide"></a>
                     </div>
                   </div>
                   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -268,6 +300,9 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+    
+    <!-- My script -->
+    <script src="js/script.js"></script>
 
 </body>
 
